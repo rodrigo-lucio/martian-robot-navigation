@@ -20,7 +20,7 @@ class ControlRobotUseCaseTest {
 
     @Test
     @DisplayName("Given a robot and a list of valid commands, should move the robot with rotation right")
-    void shouldControlRobotSouth() {
+    void shouldControlRobotRight() {
         var expectedPositionX = 2;
         var expectedPositionY = 0;
         var expectedDirection = "S";
@@ -29,7 +29,7 @@ class ControlRobotUseCaseTest {
 
         var actualOutput = controlRobotUseCase.execute(controlRobotInputDTO);
 
-        assertNotNull(actualOutput.id());
+        assertNotNull(actualOutput.robotId());
         assertEquals(expectedPositionX, actualOutput.positionX());
         assertEquals(expectedPositionY, actualOutput.positionY());
         assertEquals(expectedDirection, actualOutput.direction());
@@ -37,7 +37,7 @@ class ControlRobotUseCaseTest {
     }
     @Test
     @DisplayName("Given a list of valid commands, should move the robot with rotation left")
-    void shouldControlRobotWest() {
+    void shouldControlRobotLeft() {
         var expectedPositionX = 0;
         var expectedPositionY = 2;
         var expectedDirection = "W";
@@ -46,7 +46,7 @@ class ControlRobotUseCaseTest {
 
         var actualOutput = controlRobotUseCase.execute(controlRobotInputDTO);
 
-        assertNotNull(actualOutput.id());
+        assertNotNull(actualOutput.robotId());
         assertEquals(expectedPositionX, actualOutput.positionX());
         assertEquals(expectedPositionY, actualOutput.positionY());
         assertEquals(expectedDirection, actualOutput.direction());

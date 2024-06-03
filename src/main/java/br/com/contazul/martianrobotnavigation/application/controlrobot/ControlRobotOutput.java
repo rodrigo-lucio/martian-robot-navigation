@@ -3,7 +3,7 @@ package br.com.contazul.martianrobotnavigation.application.controlrobot;
 import br.com.contazul.martianrobotnavigation.domain.robot.Robot;
 
 public record ControlRobotOutput(
-        String id,
+        String robotId,
         Integer positionX,
         Integer positionY,
         String direction
