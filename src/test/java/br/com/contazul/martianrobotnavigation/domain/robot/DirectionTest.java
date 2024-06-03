@@ -15,6 +15,7 @@ class DirectionTest {
     void shouldConvertDirectionNorth() {
         var direction = Direction.from("NORTH");
         assertEquals(Direction.NORTH, direction);
+        assertEquals("N", direction.getFirstChar());
     }
 
     @Test
@@ -22,6 +23,7 @@ class DirectionTest {
     void shouldConvertDirectionSouth() {
         var direction = Direction.from("SOUTH");
         assertEquals(Direction.SOUTH, direction);
+        assertEquals("S", direction.getFirstChar());
     }
 
     @Test
@@ -29,6 +31,7 @@ class DirectionTest {
     void shouldConvertDirectionEast() {
         var direction = Direction.from("EAST");
         assertEquals(Direction.EAST, direction);
+        assertEquals("E", direction.getFirstChar());
     }
 
     @Test
@@ -36,6 +39,7 @@ class DirectionTest {
     void shouldConvertDirectionWest() {
         var direction = Direction.from("WEST");
         assertEquals(Direction.WEST, direction);
+        assertEquals("W", direction.getFirstChar());
     }
 
     @Test

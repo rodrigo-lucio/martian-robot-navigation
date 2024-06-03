@@ -13,6 +13,9 @@ public enum Direction {
     EAST,
     WEST;
 
+    public String getFirstChar() {
+        return this.toString().substring(0, 1);
+    }
 
     public static Direction from(final String value) {
         if (StringUtils.isNullOrBlank(value)) {
