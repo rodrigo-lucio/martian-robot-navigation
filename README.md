@@ -1,4 +1,4 @@
-# Desafio Conta Azul 🚀
+# Desafio de exploração dos Robôs em Marte 🚀
 
 ## O Problema 
 - Um time de robôs devem ser colocados pela NASA para explorar um terreno em Marte 🔴. 
@@ -29,7 +29,7 @@ Foram criados testes unitários para todas as camadas da aplicação.
 ## Via sua IDE de preferência
 1 - Verifique se o JDK 17 esteja instalado e funcionando corretamente em seu computador.
 2 - Importe o projeto na sua IDE
-3 - Execute a aplicação na [classe main](https://github.com/rodrigo-lucio/test/blob/main/src/main/java/br/com/contazul/martianrobotnavigation/MartianRobotNavigationApplication.java#).
+3 - Execute a aplicação na [classe main](https://github.com/rodrigo-lucio/martian-robot-navigation/blob/main/src/main/java/br/com/contazul/martianrobotnavigation/MartianRobotNavigationApplication.java).
 
 ## Documentação 
 
@@ -100,4 +100,4 @@ Foram criados testes unitários para todas as camadas da aplicação.
   }
 
 ## Testes de integração
-Foram criados testes de integração utilizando o Postman. A collection foi exportada e encontra-se [aqui](https://github.com/rodrigo-lucio/test/blob/main/src/main/java/br/com/contazul/martianrobotnavigation/MartianRobotNavigationApplication.java#). Basta apenas importar a collection e clicar em Run collection, e os testes já serão executados.
+Foram criados testes de integração utilizando o Postman. A collection foi exportada e encontra-se [aqui](https://github.com/rodrigo-lucio/martian-robot-navigation/blob/main/Mars%20Robot%20Navigation%20-%20Conta%20Azul.postman_collection.json). Basta apenas importar o arquivo, clicar em Run collection, e os testes já serão executados.
