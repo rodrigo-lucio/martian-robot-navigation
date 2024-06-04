@@ -14,7 +14,7 @@
 O desafio foi desenvolvido utilizando as seguintes tecnologias:
 - Java 17
 - [Spring Boot](https://spring.io/projects/spring-boot)
-- [MockMvn](https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework.html) e [JUnit5](https://junit.org/junit5/) para testes unitários.
+- [MockMvc](https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework.html) e [JUnit5](https://junit.org/junit5/) para testes unitários.
 - [Docker](https://www.docker.com/get-started)
 Foram criados testes unitários para todas as camadas da aplicação.
 
