@@ -23,7 +23,7 @@ public class ControlRobotUseCase {
         return ControlRobotOutput.from(robot);
     }
 
-    private void validateInput(ControlRobotInput input) {
+    private void validateInput(final ControlRobotInput input) {
         if (StringUtils.isNullOrBlank(input.commands())) {
             throw new UseCaseException("Commands are required");
         }

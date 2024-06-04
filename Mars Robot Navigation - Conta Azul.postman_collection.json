@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "fc7f836a-9538-4e8c-9ca5-ce24129965e7",
+		"name": "Mars Robot Navigation - Conta Azul",
+		"description": "Curls e testes de integração do desafio proposto pela Conta Azul (Navegação de robôs em marte)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7753717"
+	},
+	"item": [
+		{
+			"name": "Movimento com rotação para direita",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Movimento com rotação para direita\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(jsonData[\"robotId\"]).not.NaN;\r",
+							"    pm.expect(jsonData[\"positionX\"]).equals(2);\r",
+							"    pm.expect(jsonData[\"positionY\"]).equals(0);\r",
+							"    pm.expect(jsonData[\"direction\"]).equals(\"S\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/mars/MMRMMRMM",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"MMRMMRMM"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimento com rotação para esquerda",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Movimento com rotação para esquerda\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(jsonData[\"robotId\"]).not.NaN;\r",
+							"    pm.expect(jsonData[\"positionX\"]).equals(0);\r",
+							"    pm.expect(jsonData[\"positionY\"]).equals(2);\r",
+							"    pm.expect(jsonData[\"direction\"]).equals(\"W\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/mars/MML",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"MML"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Repetição da requisição com movimento para esquerda",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Movimento com rotação para esquerda\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(jsonData[\"robotId\"]).not.NaN;\r",
+							"    pm.expect(jsonData[\"positionX\"]).equals(0);\r",
+							"    pm.expect(jsonData[\"positionY\"]).equals(2);\r",
+							"    pm.expect(jsonData[\"direction\"]).equals(\"W\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/mars/MML",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"MML"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comando inválido",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Comando inválido\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    pm.response.to.have.status(400);\r",
+							"    \r",
+							"    pm.expect(jsonData[\"status\"]).equals(400);\r",
+							"    pm.expect(jsonData[\"reason\"]).equals(\"Bad Request\");\r",
+							"    pm.expect(jsonData[\"message\"]).equals(\"Invalid command: A. Valid commands are: L, R, M\");\r",
+							"    pm.expect(jsonData[\"timestamp\"]).not.NaN;\r",
+							"\r",
+							"    pm.expect(jsonData[\"robotId\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"positionX\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"positionY\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"direction\"]).is.undefined;\r",
+							"\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rest/mars/AAA",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"AAA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posição inválida",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Comando inválido\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    pm.response.to.have.status(400);\r",
+							"    \r",
+							"    pm.expect(jsonData[\"status\"]).equals(400);\r",
+							"    pm.expect(jsonData[\"reason\"]).equals(\"Bad Request\");\r",
+							"    pm.expect(jsonData[\"message\"]).equals(\"The robot cannot leave the exploration area\");\r",
+							"    pm.expect(jsonData[\"timestamp\"]).not.NaN;\r",
+							"\r",
+							"    pm.expect(jsonData[\"robotId\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"positionX\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"positionY\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"direction\"]).is.undefined;\r",
+							"\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"MMMMMMMMMMMMMMMMMMMMMMMM"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comando vazio",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Comando vazio\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    pm.response.to.have.status(400);\r",
+							"    \r",
+							"    pm.expect(jsonData[\"status\"]).equals(400);\r",
+							"    pm.expect(jsonData[\"reason\"]).equals(\"Bad Request\");\r",
+							"    pm.expect(jsonData[\"message\"]).equals(\"Commands are required\");\r",
+							"    pm.expect(jsonData[\"timestamp\"]).not.NaN;\r",
+							"\r",
+							"    pm.expect(jsonData[\"robotId\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"positionX\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"positionY\"]).is.undefined;\r",
+							"    pm.expect(jsonData[\"direction\"]).is.undefined;\r",
+							"\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/mars/ ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						" "
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
