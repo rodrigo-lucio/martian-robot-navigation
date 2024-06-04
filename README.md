@@ -100,4 +100,4 @@ Foram criados testes unitários para todas as camadas da aplicação.
   }
 
 ## Testes de integração
-Foram criados testes de integração utilizando o Postman. A collection foi exportada e encontra-se [aqui](https://github.com/rodrigo-lucio/martian-robot-navigation/blob/main/Mars%20Robot%20Navigation%20-%20Conta%20Azul.postman_collection.json). Basta apenas importar o arquivo, clicar em Run collection, e os testes já serão executados.
+Foram criados testes de integração utilizando o Postman. A collection foi exportada e encontra-se [aqui](https://github.com/rodrigo-lucio/martian-robot-navigation/blob/main/Mars%20Robot%20Navigation%20-%20Conta%20Azul.postman_collection.json). Basta apenas importar o arquivo, clicar em Run collection e os testes já serão executados.
