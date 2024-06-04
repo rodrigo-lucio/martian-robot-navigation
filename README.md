@@ -76,7 +76,7 @@ Foram criados testes unitários para todas as camadas da aplicação.
 ### 4. Comando inválido:
 - **Requisição**:
    ```bash
-   curl -s --request POST http://localhost:8080/rest/mars/MML
+   curl -s --request POST http://localhost:8080/rest/mars/AAA
    ```
 - **Resposta**:
   ```json
@@ -89,7 +89,7 @@ Foram criados testes unitários para todas as camadas da aplicação.
 ### 5. Posição inválida:
 - **Requisição**:
    ```bash
-   curl -s --request POST http://localhost:8080/rest/mars/MML
+   curl -s --request POST http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM
    ```
 - **Resposta**:
   ```json
