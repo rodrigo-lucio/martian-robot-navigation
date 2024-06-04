@@ -9,7 +9,7 @@
 - Para controlar cada robô, a NASA envia uma string simples, que pode conter as letras ‘L’, ‘R’ e ‘M’. As letras ‘L’ e ‘R’ fazem o robô rotacionar em seu próprio eixo 90 graus para esquerda ou para direita, respectivamente, sem se mover da sua posição atual. A letra ‘M’ faz o robô deslocar-se uma posição para frente.
 - Assume-se que um robô se movimenta para o NORTE em relação ao eixo y. Ou seja, um passo para o NORTE da posição (x,y), é a posição (x, y+1).
 
-# Stack 💻
+## Stack 💻
 
 O desafio foi desenvolvido utilizando as seguintes tecnologias:
 - Java 17
@@ -17,7 +17,7 @@ O desafio foi desenvolvido utilizando as seguintes tecnologias:
 - [Docker](https://www.docker.com/get-started)
 Foram criados testes unitários para todas as camadas da aplicação.
 
-# Para rodar o projeto:
+## Para rodar o projeto:
 ## Via docker 🐋
 1. Verifique se o Docker está instalado e funcionando no seu computador, pode ser via WSL ou Docker desktop.
 2.  Execute o seguinte comando:
@@ -31,7 +31,7 @@ Foram criados testes unitários para todas as camadas da aplicação.
 2 - Importe o projeto na sua IDE
 3 - Execute a aplicação na [classe main](https://github.com/rodrigo-lucio/test/blob/main/src/main/java/br/com/contazul/martianrobotnavigation/MartianRobotNavigationApplication.java#).
 
-# Documentação 
+## Documentação 
 
 ### 1. Movimento do robô com rotação para direita:
 - **Requisição**:
@@ -99,4 +99,5 @@ Foram criados testes unitários para todas as camadas da aplicação.
       "timestamp": "2024-06-03T21:46:03.9115173"
   }
 
+## Testes de integração
 Foram criados testes de integração utilizando o Postman. A collection foi exportada e encontra-se [aqui](https://github.com/rodrigo-lucio/test/blob/main/src/main/java/br/com/contazul/martianrobotnavigation/MartianRobotNavigationApplication.java#). Basta apenas importar a collection e clicar em Run collection, e os testes já serão executados.
