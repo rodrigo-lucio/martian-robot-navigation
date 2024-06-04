@@ -14,6 +14,7 @@
 O desafio foi desenvolvido utilizando as seguintes tecnologias:
 - Java 17
 - [Spring Boot](https://spring.io/projects/spring-boot)
+- [MockMvn](https://docs.spring.io/spring-framework/reference/testing/spring-mvc-test-framework.html) e [JUnit5](https://junit.org/junit5/) para testes unitários.
 - [Docker](https://www.docker.com/get-started)
 Foram criados testes unitários para todas as camadas da aplicação.
 
@@ -27,9 +28,9 @@ Foram criados testes unitários para todas as camadas da aplicação.
 3. O projeto estará rodando com sucesso na porta em [http://localhost:8080](http://localhost:8080), e aguardando para receber as requisições.
 
 ## Via sua IDE de preferência 💻
-1 - Verifique se o JDK 17 esteja instalado e funcionando corretamente em seu computador.
-2 - Importe o projeto na sua IDE
-3 - Execute a aplicação na [classe main](https://github.com/rodrigo-lucio/martian-robot-navigation/blob/main/src/main/java/br/com/contazul/martianrobotnavigation/MartianRobotNavigationApplication.java).
+1. Verifique se o JDK 17 está instalado e funcionando corretamente em seu computador.
+2. Importe o projeto na sua IDE
+3. Execute a aplicação na [classe main](https://github.com/rodrigo-lucio/martian-robot-navigation/blob/main/src/main/java/br/com/contazul/martianrobotnavigation/MartianRobotNavigationApplication.java).
 
 ## Documentação 📑
 
